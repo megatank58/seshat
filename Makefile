@@ -1,5 +1,5 @@
-CC=g++
-LINK=-lxerces-c -lm
+CC=clang
+LINK=-Wl,--copy-dt-needed-entries -lxerces-c -lm 
 FLAGS = -O3 -Wno-unused-result -fpermissive #-I/path/to/boost/
 
 OBJFEAS=symfeatures.o featureson.o online.o
